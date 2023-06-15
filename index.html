@@ -55,8 +55,6 @@
         <div class="header-bottom">
             <div class="container">
                 <div class="navbar navbar-expand-lg">
-
-
                     <h1 class="navbar-brand">
                         <a href=""> <img
                                 src="https://pbs.twimg.com/profile_images/1568449080178909184/c7QA6j1U_400x400.jpg"
@@ -78,7 +76,8 @@
                                         <a href=""><span>Applications</span></a>
                                     </li>
                                     <li>
-                                        <a href=""><span>New Registration / Login</span></a>
+                                        <a href="" data-bs-toggle="modal" data-bs-target="#login-modal"><span>Register /
+                                                Login</span></a>
                                     </li>
                                 </ul>
                                 <a href="#" class="mob-menu" title="Mobile Menu">
@@ -90,12 +89,39 @@
                             </nav>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
 
+        <div class="modal fade" id="login-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-content text-center">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <form class="form m-auto">
+                            <p class="title">Login </p>
+                            <p class="message">Login with registered mobile number or email id</p>
+                            <label>
+                                <input required="" placeholder="" type="email" class="input">
+                                <span>Registered Mobile / Email</span>
+                            </label>
+
+                            <label>
+                                <input required="" placeholder="" type="password" class="input">
+                                <span>Password</span>
+                            </label>
+                            <button class="submit">Sign In</button>
+                            <p class="signin">New Registration ? <a href="#">Register</a> </p>
+                        </form>
+                        <div class="modal-footer">
+                            <img src="https://g20.mygov.in/images/banner-1.png" alt="">
+                            <!-- <img src="https://igod.gov.in/assets/images/site-img.jpg" alt="" style="width: 100%;">   -->
+                        </div>
+                    </div>
+                </div>
+            </div>
     </header>
 
     <main id="main-content" class="main-content">
@@ -319,7 +345,7 @@
         </section>
 
         <!-------------------------------- Agro model ---------------------------------->
-        <class class="modal fade" id="agro-model" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal fade" id="agro-model" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -657,10 +683,10 @@
                     </div>
                 </div>
             </div>
-        </class>
+        </div>
 
         <!-------------------------------- Consumer model ---------------------------------->
-        <class class="modal fade" id="consumer-model" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal fade" id="consumer-model" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -865,11 +891,10 @@
                     </div>
                 </div>
             </div>
-        </class>
+        </div>
 
         <!-------------------------------- Construction model ---------------------------------->
-        <class class="modal fade" id="construction-model" tabindex="-1" aria-labelledby="modal-title"
-            aria-hidden="true">
+        <div class="modal fade" id="construction-model" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -1074,10 +1099,10 @@
                     </div>
                 </div>
             </div>
-        </class>
+        </div>
 
         <!-------------------------------- cooperative Bank model ---------------------------------->
-        <class class="modal fade" id="bank-model" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal fade" id="bank-model" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -1292,10 +1317,10 @@
                     </div>
                 </div>
             </div>
-        </class>
+        </div>
 
         <!-------------------------------- Credit model ---------------------------------->
-        <class class="modal fade" id="credit-model" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal fade" id="credit-model" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -1500,10 +1525,10 @@
                     </div>
                 </div>
             </div>
-        </class>
+        </div>
 
         <!-------------------------------- Dairy model ---------------------------------->
-        <class class="modal fade" id="dairy-model" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal fade" id="dairy-model" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -1708,10 +1733,10 @@
                     </div>
                 </div>
             </div>
-        </class>
+        </div>
 
         <!-------------------------------- Federation model ---------------------------------->
-        <class class="modal fade" id="federation-model" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal fade" id="federation-model" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -1916,10 +1941,10 @@
                     </div>
                 </div>
             </div>
-        </class>
+        </div>
 
         <!-------------------------------- Fish model ---------------------------------->
-        <class class="modal fade" id="fish-model" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal fade" id="fish-model" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -2132,10 +2157,10 @@
                     </div>
                 </div>
             </div>
-        </class>
+        </div>
 
         <!-------------------------------- Health model ---------------------------------->
-        <class class="modal fade" id="health-model" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal fade" id="health-model" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -2367,10 +2392,10 @@
                     </div>
                 </div>
             </div>
-        </class>
+        </div>
 
         <!-------------------------------- Housing model ---------------------------------->
-        <class class="modal fade" id="housing-model" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal fade" id="housing-model" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -2575,10 +2600,10 @@
                     </div>
                 </div>
             </div>
-        </class>
+        </div>
 
         <!-------------------------------- Industry model ---------------------------------->
-        <class class="modal fade" id="industry-model" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal fade" id="industry-model" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -2793,10 +2818,10 @@
                     </div>
                 </div>
             </div>
-        </class>
+        </div>
 
         <!-------------------------------- Tourism model ---------------------------------->
-        <class class="modal fade" id="tourism-model" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal fade" id="tourism-model" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -3001,10 +3026,10 @@
                     </div>
                 </div>
             </div>
-        </class>
+        </div>
 
         <!-------------------------------- National Federation model ---------------------------------->
-        <class class="modal fade" id="national-model" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal fade" id="national-model" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -3209,10 +3234,10 @@
                     </div>
                 </div>
             </div>
-        </class>
+        </div>
 
         <!-------------------------------- Marketing model ---------------------------------->
-        <class class="modal fade" id="market-model" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal fade" id="market-model" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -3417,10 +3442,10 @@
                     </div>
                 </div>
             </div>
-        </class>
+        </div>
 
         <!-------------------------------- Welfare model ---------------------------------->
-        <class class="modal fade" id="welfare-model" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal fade" id="welfare-model" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -3625,10 +3650,10 @@
                     </div>
                 </div>
             </div>
-        </class>
+        </div>
 
         <!-------------------------------- Other model ---------------------------------->
-        <class class="modal fade" id="other-model" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal fade" id="other-model" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -3712,7 +3737,7 @@
                     </div>
                 </div>
             </div>
-        </class>
+        </div>
 
 
         <section class="section-row sow">
@@ -3726,7 +3751,7 @@
                                 <div class="sow-placeholder">
                                     <img src="https://igod.gov.in/assets/images/screen.png">
                                     <div class="sow-img">
-                                        <img src="https://igod.gov.in/assets/images/site-img.jpg" alt="In Focus">
+                                        <img src="https://g20.mygov.in/images/banner-1.png" alt="In Focus">
                                     </div>
                                 </div>
                             </div>
