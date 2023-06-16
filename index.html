@@ -93,6 +93,7 @@
             </div>
         </div>
 
+        <!----------- Login Modal --------->
         <div class="modal fade" id="login-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -113,7 +114,8 @@
                                 <span>Password</span>
                             </label>
                             <button class="submit">Sign In</button>
-                            <p class="signin">New Registration ? <a href="#">Register</a> </p>
+                            <p class="signin">New Registration ? <a href="" data-bs-toggle="modal"
+                                    data-bs-target="#register-model">Register</a> </p>
                         </form>
                         <div class="modal-footer">
                             <img src="https://g20.mygov.in/images/banner-1.png" alt="">
@@ -121,11 +123,143 @@
                         </div>
                     </div>
                 </div>
+
+
             </div>
     </header>
 
-    <main id="main-content" class="main-content">
+    <!-------------- Registration Modal -------------->
+    <div class="modal fade" id="register-model" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="container">
+                    <p class="title mt-5 mb-5">New Registration</p>
+                    <form class="m-2">
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="DdlState" class="form-label">Select State (Head Quater)</label>
+                                <select name="DdlState" id="DdlState" class="form-select" style="height:30px;">
+                                    <option selected>-- Select State --</option>
+                                    <option value="35">ANDAMAN AND NICOBAR</option>
+                                    <!-- Other state options -->
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="DdlDistrict" class="form-label">Select District</label>
+                                <select name="DdlDistrict" id="DdlDistrict" class="form-select" style="height:30px;">
+                                    <option>-- Select District --</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="DdlType" class="form-label">Select Type / Class of the Society</label>
+                                <select name="DdlType" id="DdlType" class="form-select" style="height:30px;">
+                                    <option selected>-- Select Type --</option>
+                                    <!-- Type options -->
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="DdlSName" class=" form-label">Name</label>
+                                <input name="" type="text" id="name" class="form-control"
+                                    placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="TSAddress" class="form-label">Complete Registered Address (with PIN
+                                    code)</label>
+                                <textarea name="TSAddress" id="TSAddress" class="form-control" rows="2"
+                                    style="width:550px;"></textarea>
+                                <span class="form-text">Please Update Full Address</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="TPAN" class="form-label">PAN No.</label>
+                                <input name="TPAN" type="text" id="TPAN" class="form-control"
+                                    placeholder="Please Enter PAN No.">
+                                <span id="REV_PAN" class="form-text text-danger" style="display:none;">Invalid PAN
+                                    No</span>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="TTAN" class="form-label">TAN No.</label>
+                                <input name="TTAN" type="text" id="TTAN" class="form-control"
+                                    placeholder="Please Enter TAN No.">
+                                <span id="REV_TAN" class="form-text text-danger" style="display:none;">Invalid TAN
+                                    No.</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="TAHolder" class="form-label">Name of MD/Chairman/Vice Chairman/Officers
+                                    Authorized (Select)</label>
+                                <input name="TAHolder" type="text" id="TAHolder" class="form-control"
+                                    placeholder="Please Enter Name">
+                                with label bootstrap responsive form.
+                            </div>
+                            <div class="col-md-6">
+                                <label for="TAPhone" class="form-label">Phone No.</label>
+                                <input name="TAPhone" type="text" id="TAPhone" class="form-control"
+                                    placeholder="Please Enter Phone No.">
+                                <span id="REV_PHONE" class="form-text text-danger" style="display:none;">Invalid Phone
+                                    No.</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="TAMobile" class="form-label">Mobile No.</label>
+                                <input name="TAMobile" type="text" id="TAMobile" class="form-control"
+                                    placeholder="Please Enter Mobile No.">
+                                <span id="REV_MOBILE" class="form-text text-danger" style="display:none;">Invalid Mobile
+                                    No.</span>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="TAEmail" class="form-label">Email</label>
+                                <input name="TAEmail" type="text" id="TAEmail" class="form-control"
+                                    placeholder="Please Enter Email">
+                                <span id="REV_EMAIL" class="form-text text-danger" style="display:none;">Invalid
+                                    Email</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="TAWebsite" class="form-label">Website</label>
+                                <input name="TAWebsite" type="text" id="TAWebsite" class="form-control"
+                                    placeholder="Please Enter Website">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="TARegisteredOn" class="form-label">Registered On</label>
+                                <input name="TARegisteredOn" type="text" id="TARegisteredOn" class="form-control"
+                                    placeholder="Please Enter Registration Date">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for="TANotes" class="form-label">Additional Notes</label>
+                                <textarea name="TANotes" id="TANotes" class="form-control" rows="3"
+                                    style="width:550px;"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button class="submit mt-3">Sign In</button>
+                                <button type="reset" class="submit mt-3">Reset</button>
+                            <p class="signin">Already Registered ? <a href="" data-bs-toggle="modal"
+                                    data-bs-target="#register-model">Login</a> </p>
+                                
+                            </div>
+                        </div>
+                    </form>
+                </div>
 
+
+            </div>
+        </div>
+    </div>
+
+    <main id="main-content" class="main-content">
         <section class="banner-section">
             <img src="https://igod.gov.in/assets/images/banner.jpg" alt="">
             <div class="banner-meta-outer">
